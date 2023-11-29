@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Judul Laman -->
+    <title>Vegebox</title>
+
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="assets/style/style.css" />
+
+    <!-- Icon Menggunakan = Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header navigation -->
+    <header>
+      <nav>
+        <div class="logo-nav">
+          <img src="assets/img/logo-brand.png" alt="logo-brand" />
+        </div>
+        <div class="menu-nav">
+          <ul class="list-nav">
+            <li><a href="#home" title="home">Home</a></li>
+            <li><a href="#about" title="about">About</a></li>
+            <li><a href="#service" title="service">Service</a></li>
+            <li><a href="#article" title="article">Article</a></li>
+          </ul>
+        </div>
+        <div class="search-nav">
+          <form action="" class="search-form">
+            <input
+              type="text"
+              id="search-input"
+              name="search-input"
+              placeholder="Search..." />
+            <span class="search-wrap">
+              <button class="search-button" type="submit" title="search">
+                <i data-feather="search"></i>
+              </button>
+            </span>
+          </form>
+        </div>
+        <button class="navbar-extra" type="button" onclick="toggleImage()">
+          <img
+            src="assets/img/menu.png"
+            alt="Menu"
+            class="active"
+            id="toggleImage" />
+        </button>
+      </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+      <!-- home -->
+      <section class="home-bar" id="home">
+        <article class="home-art">
+          <h1>
+            Get Fresh Vegetables Right At Your Doorstep As They Are Delivered
+            fast
+          </h1>
+          <p>
+            Experience the convenience of getting fresh vegetables quickly,
+            right to your door! Download the VageBox App now and enjoy your
+            shopping experience.
+          </p>
+          <div class="button-home">
+            <a href=""
+              ><button type="button" title="play-store">Play Store</button></a
+            >
+            <a href=""
+              ><button type="button" title="app-store">Apple Store</button></a
+            >
+          </div>
+        </article>
+        <aside class="home-aside">
+          <img src="assets/img/home-img.png" alt="img-brand" />
+        </aside>
+      </section>
+      <div class="box">
+        <div class="rectangle">
+          <p>Supplying Products To</p>
+          <div class="logo-collab" id="logoCollab">
+            <img src="assets/img/collab-1.png" alt="1" />
+            <img src="assets/img/collab-2.png" alt="2" />
+            <img src="assets/img/collab-3.png" alt="3" />
+            <img src="assets/img/collab-4.png" alt="4" />
+            <img src="assets/img/collab-5.png" alt="5" />
+            <img src="assets/img/collab-6.png" alt="6" />
+            <img src="assets/img/collab-7.png" alt="7" />
+            <img src="assets/img/collab-8.png" alt="8" />
+
+            <!-- for looping -->
+            <img src="assets/img/collab-1.png" alt="1" />
+            <img src="assets/img/collab-2.png" alt="2" />
+            <img src="assets/img/collab-3.png" alt="3" />
+            <img src="assets/img/collab-4.png" alt="4" />
+            <img src="assets/img/collab-5.png" alt="5" />
+            <img src="assets/img/collab-6.png" alt="6" />
+            <img src="assets/img/collab-7.png" alt="7" />
+            <img src="assets/img/collab-8.png" alt="8" />
+          </div>
+        </div>
+      </div>
+
+      <!-- about -->
+      <section class="about-bar animate-on-scroll" id="about">
+        <div class="about-head">
+          <article class="about-art">
+            <h2>Guaranteed fresh vegetables and fruit to your doorstep</h2>
+            <p>
+              Experience the convenience of having farm-fresh vegetables and
+              fruits delivered right to your doorstep. Our service guarantees
+              the freshness and quality of our produce, ensuring that you
+              receive only the best. Enjoy the taste of health and wellness with
+              every bite.
+            </p>
+          </article>
+          <img src="assets/img/about-head.png" alt="about-head" />
+        </div>
+        <div class="about-intro">
+          <h1>INTRODUCTION <br /><span>TO APPLICATION</span></h1>
+          <img src="assets/img/Arrow 1.png" alt="arrow" />
+          <p>
+            This application was developed to provide a quick delivery service
+            for fresh vegetables and fruit to you. The products we deliver
+            directly are guaranteed to be fresh.
+          </p>
+        </div>
+        <div class="about-app">
+          <img src="assets/img/about-app(1).png" alt="about-app" />
+          <article class="app-art">
+            <h1>ABOUT <br /><span>APPLICATION</span></h1>
+            <p>
+              VageBox is an innovative application designed to make it easier
+              for you to meet your daily needs for fresh vegetables. With a
+              user-friendly interface, VageBox guarantees a smooth and enjoyable
+              shopping experience. With just a few taps of your finger, you can
+              order the fresh vegetables you need. We prioritize data security
+              and service reliability, so you can shop with confidence. We take
+              safeguarding your personal information very seriously.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- service -->
+      <section class="service-bar animate-on-scroll">
+        <div class="service-head">
+          <h1>SERVICES <br /><span>AVAILABLE</span></h1>
+          <img src="assets/img/Arrow 1.png" alt="arrow" />
+          <p>
+            Welcome to Our Services page. At VegeBox, we are dedicated to
+            providing you with the best vegetable shopping experience. Here are
+            some of the services we offer to ensure your satisfaction:
+          </p>
+        </div>
+        <div class="service-menu">
+          <div class="service-box">
+            <img src="assets/img/about-app.png" alt="service-profile" />
+            <h1>Delivery Order</h1>
+            <p>
+              Providing easy and fast access to order fresh Veggies straight to
+              your door
+            </p>
+            <a href=""
+              ><button type="button" title="buy-service">More</button></a
+            >
+          </div>
+          <div class="service-box">
+            <img src="assets/img/about-app.png" alt="service-profile" />
+            <h1>Flexible Delivery</h1>
+            <p>
+              Can choose the delivery time that best fits your daily schedule
+              every days
+            </p>
+            <a href=""
+              ><button type="button" title="buy-service">More</button></a
+            >
+          </div>
+          <div class="service-box">
+            <img src="assets/img/about-app.png" alt="service-profile" />
+            <h1>Discounts</h1>
+            <p>
+              Enjoy the best prices for high quality fresh vegetables and fruits
+            </p>
+            <a href=""
+              ><button type="button" title="buy-service">More</button></a
+            >
+          </div>
+          <div class="service-box">
+            <img src="assets/img/about-app.png" alt="service-profile" />
+            <h1>Product Variations</h1>
+            <p>
+              Giving users the freedom to customize orders to their preferences
+            </p>
+            <a href=""
+              ><button type="button" title="buy-service">More</button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- article -->
+      <section class="article-bar animate-on-scroll">
+        <div class="art-container">
+          <div class="art-head">
+            <h1>VEGGIES <br /><span>ARTICLES</span></h1>
+            <p>
+              Reading articles about healthy and fresh vegetables and fruit for
+              consumption. and reading about healthy foods to consume.
+            </p>
+          </div>
+          <div class="art-content">
+            <a
+              href="https://www.betterhealth.vic.gov.au/health/healthyliving/fruit-and-vegetables"
+              title="About fruit and vegetables : Fruit and vegetables and protection against diseases">
+              <img src="assets/img/article-1.png" alt="article-1" />
+            </a>
+            <a
+              href="https://www.eatingwell.com/article/8004966/what-happens-to-your-body-when-you-eat-enough-fruits-vegetables/"
+              title="What Happens to Your Body When You Eat Enough Fruits & Vegetables">
+              <img src="assets/img/article-2.png" alt="article-2" />
+            </a>
+            <a
+              href="https://extension.psu.edu/smoothies-a-great-blend-of-flavor-convenience-and-nutrition"
+              title="Smoothies: a Great Blend of Flavor, Convenience, and Nutrition">
+              <img src="assets/img/article-3.png" alt="article-3" />
+            </a>
+            <a
+              href="https://www.hindustantimes.com/lifestyle/health/5-delicious-fruit-salads-you-must-add-to-your-diet-in-summer-101681373899026.html"
+              title="Five delicious fruit salads you must add to your diet in summer">
+              <img src="assets/img/article-4.png" alt="article-4" />
+            </a>
+            <a
+              href="https://www.healthline.com/nutrition/how-to-eat-healthy-guide"
+              title="The Definitive Guide to Healthy Eating in Real Life : To eat healthier, start by making small changes">
+              <img src="assets/img/article-5.png" alt="article-5" />
+            </a>
+            <a
+              href="https://www.intechopen.com/chapters/58552"
+              title="Hydroponic Production Systems: Impact on Nutritional Status and Bioactive Compounds of Fresh Vegetables">
+              <img src="assets/img/article-6.png" alt="article-6" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo-brand-app">
+        <img src="assets/img/logo-brand.png" alt="logo-foot" />
+        <div class="icon-app">
+          <a href="#ins" title="insta-icon"><i data-feather="instagram"></i></a>
+          <a href="#fac" title="face-icon"><i data-feather="facebook"></i></a>
+          <a href="#twt" title="twt-icon"><i data-feather="twitter"></i></a>
+          <a href="#drb" title="drb-icon"><i data-feather="dribbble"></i></a>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact-info">
+          <h1>CONTACT <br /><span>INFORMATION</span></h1>
+          <p>mailfreshveggies@vegebox.co.id</p>
+          <p>
+            VegeBox, Inc. Jl. Pohon Hijau No. 123 Kota Buah, Provinsi Sayuran
+            56789 Indonesia
+          </p>
+          <p>(+62) 123 4567 8901</p>
+        </div>
+        <div class="contact-hub">
+          <textarea placeholder="Message"></textarea>
+          <button type="submit" title="send">Send</button>
+        </div>
+      </div>
+      <img src="assets/img/Line 1.png" alt="line" class="line-bar" />
+      <p class="copyright">
+        &copy; 2023 Vegebox for get fresh Veggies. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Link JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Replace Icon -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
