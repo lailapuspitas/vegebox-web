@@ -432,12 +432,12 @@ footer {
   color: #fff;
   font-weight: 300;
 }
-.animate-on-scroll {
+.animated {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 1s, transform 1s;
 }
-.animate-on-scroll.animate {
+.in-view {
   opacity: 1;
   transform: translateY(0);
 }
@@ -611,5 +611,266 @@ footer {
   .contact-hub {
     padding: 25px;
     height: 12%;
+  }
+}
+@media screen and (max-width: 767px) {
+  nav {
+    height: 8%;
+    position: fixed;
+  }
+
+  .logo-nav {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    transform: translateX(-50%);
+  }
+  .logo-nav img {
+    width: 80px;
+    height: auto;
+  }
+
+  .list-nav {
+    display: none;
+  }
+  .search-form {
+    display: none;
+  }
+  .navbar-extra {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    background-color: #b7c7a9;
+  }
+  .home-bar {
+    background-color: #b7c7a9;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    min-height: 100%;
+  }
+  .home-art {
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .home-art > h1 {
+    font-size: 16px;
+  }
+  .home-art > p {
+    font-size: 12px;
+  }
+  .button-home {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+  }
+  .button-home button {
+    padding: 10px 50px;
+    border-radius: 12px;
+    background: linear-gradient(#2e4617, #4c7427);
+    color: #fff;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  .button-home button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  .home-aside img {
+    width: 300px;
+    margin-left: 160px;
+  }
+  .box {
+    position: relative;
+    z-index: 1;
+  }
+  .rectangle {
+    width: 300px;
+    height: 120px;
+    top: -60px;
+    border-radius: 40px;
+  }
+  .rectangle p {
+    left: 30%;
+    font-size: 12px;
+    top: 5%;
+    position: relative;
+    z-index: 3;
+  }
+  .logo-collab {
+    margin-top: 15px;
+  }
+  .logo-collab img {
+    width: 20%;
+  }
+  .about-bar {
+    flex: 1;
+    padding-top: 120px;
+  }
+  .about-head {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 40px;
+    text-align: center;
+    align-items: center;
+  }
+  .about-head > img {
+    width: 200px;
+    height: 180px;
+  }
+  .about-art {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .about-art > h2 {
+    font-size: 18px;
+  }
+  .about-art > p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .about-intro,
+  .service-head {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 40px;
+  }
+  .about-intro h1,
+  .about-app h1,
+  .service-head h1,
+  .art-head h1,
+  .contact-info h1 {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .about-intro h1 span,
+  .about-app h1 span,
+  .service-head h1 span,
+  .art-head h1 span,
+  .contact-info h1 span {
+    font-weight: 300;
+    font-size: 22px;
+  }
+  .about-intro img,
+  .service-head img {
+    height: 18px;
+    width: 100px;
+  }
+  .about-intro p,
+  .service-head p,
+  .about-app p,
+  .art-head {
+    font-size: 12px;
+    text-align: justify;
+  }
+  .about-app {
+    flex-direction: column;
+    margin: 0 50px;
+    gap: 10px;
+  }
+  .about-app .app-art {
+    margin-top: 10px;
+  }
+  .about-app img {
+    height: 260px;
+    width: 260px;
+    margin-top: 40px;
+    align-items: center;
+  }
+  .service-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+  }
+  .service-box {
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    height: 320px;
+    padding: 40px 20px;
+  }
+  .service-box img {
+    width: 80px;
+    height: 80px;
+  }
+  .service-box h1 {
+    font-size: 18px;
+  }
+  .service-box p {
+    font-size: 10px;
+  }
+  .art-container {
+    max-width: 800px;
+    margin: 40px 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+  }
+  .art-head {
+    flex-direction: column;
+    gap: 0;
+  }
+  .art-head h1 {
+    color: #fff;
+    font-size: 22px;
+  }
+  .art-head p {
+    color: #fff;
+    font-size: 12px;
+  }
+  .art-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .art-content a {
+    font-size: 12px;
+  }
+  .art-content img {
+    height: 200px;
+  }
+  footer {
+    padding: 10px 20px;
+  }
+  .logo-brand-app {
+    flex-direction: column;
+  }
+  .logo-brand-app img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .icon-app {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .icon-app a:hover {
+    transform: scale(1.2);
+  }
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-info {
+    max-width: 320px;
+  }
+  .contact-info p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .contact-hub {
+    padding: 20px;
+    width: 90%;
+    height: 12%;
+  }
+  .copyright {
+    margin-bottom: 20px;
   }
 }

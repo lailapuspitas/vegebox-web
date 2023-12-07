@@ -1,21 +1,23 @@
-const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
-
-const observer = new IntersectionObserver(handleIntersection, {
-  threshold: 0.5, // Ubah threshold sesuai kebutuhan Anda
-});
-
-elementsToAnimate.forEach((element) => {
-  observer.observe(element);
-});
-
-function handleIntersection(entries, observer) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("animate");
-      observer.unobserve(entry.target);
+const animatedElements = document.querySelectorAll(".animated");
+function isInView(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+function handleScroll() {
+  animatedElements.forEach((element) => {
+    if (isInView(element)) {
+      element.classList.add("in-view");
     }
   });
 }
+window.addEventListener("scroll", handleScroll);
+handleScroll();
 
 function toggleImage() {
   var imageElement = document.getElementById("toggleImage");
